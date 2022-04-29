@@ -1,0 +1,54 @@
+.produits .bg-container {
+    background-color: var(--backgroundColor_section);
+}
+
+.produits h1 {
+    hyphens: auto;
+}
+
+.produits p {
+    font-family: var(--PoliceText);
+    hyphens: auto;
+}
+
+.produits q {
+    font-family: var(--PoliceQuote);
+    hyphens: auto;
+}
+
+.produits .oval {
+    background: white;
+    border-radius: 1000px / 100px;
+}
+
+.produits .btn {
+    background-color: var(--backgroundColor_FH);
+    color: white;
+}
+
+
+.carousel-indicators {
+    position: static;
+    margin: 0 0 1rem 0;
+    justify-content: space-between;
+}
+
+.carousel-indicators [data-bs-target] {
+    width: 30%;
+    height: auto;
+}
+
+.carousel, .slide,
+.carousel .carousel-inner,
+.carousel .carousel-item,
+.carousel .carousel-item img,
+.carousel .carousel-control {
+    border-radius: 1em;
+    overflow: hidden;
+}
+
+.img_carousel {
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    border-radius: 1em;
+}

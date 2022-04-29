@@ -1,0 +1,11 @@
+
+.catalogue .bg-container{
+    background-color: var(--backgroundColor_section);
+}
+
+.catalogue a{
+    text-decoration: none;
+    color: black;
+    hyphens: auto;
+    /* font-family: var(--PoliceTitle); */
+}

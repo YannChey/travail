@@ -1,0 +1,283 @@
+
+@font-face{
+    font-family:tajawal;
+    src: url("../font/Tajawal/Tajawal-Regular.ttf") format("opentype");
+}
+
+@font-face{
+    font-family:Ubuntu;
+    src: url("../font/Ubuntu/Ubuntu-Regular.ttf") format("opentype");
+}
+
+@font-face{
+    font-family:Barlow;
+    src: url("../font/Barlow/Barlow-Medium.ttf") format("opentype");
+}
+
+:root{
+    --backgroundColor_FH: #898f86;
+    --backgroundColor_FH_clair: #97a585;
+    --backgroundColor_FH_clair_opaciter:#97a5858c;
+    --ColorTitle: #666e5a;
+    --PoliceQuote: tajawal;
+    --PoliceText: Ubuntu;
+    --PoliceTitle: Barlow;
+    --backgroundColor_section: #d3c4b2c5;
+    --borderRadius_max: 0.5rem;
+    --borderRadius_min: 0.2rem;
+    --borderRadius_round:50%;
+    --Backgroundheaderfooter: linear-gradient(to left, #898f86, #97a585 50%, #eee 125%, #333 50%);
+}
+
+
+.bg-main{
+    background: url(../img/Background.png) no-repeat center center fixed; 
+    background-size: cover;
+}
+
+/*NAVBAR*/
+
+
+header{
+    z-index: 9999;
+    position: sticky;
+    top:0;
+}
+
+.navbar{
+    background:var(--Backgroundheaderfooter)
+}
+
+.caddie, .logo{
+    max-height:40px;
+}
+
+.navbar-nav{
+    padding-left:50px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color:white;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: var(--PoliceTitle);
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color:rgb(0, 0, 0);
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.btn-outline-success{
+    border-color:white;
+    color:white;
+}
+
+.btn-outline-success:hover{
+    background-color: black;
+    border-color:white;
+    color:white;
+}
+
+.pageprincipale{
+    overflow-x:hidden;
+}
+
+/*FOOTER*/
+
+footer{
+    background:var(--Backgroundheaderfooter)
+}
+
+.logofooter{
+    text-align: center;
+}
+
+.lbmfooter{
+    height:90px;
+}
+
+div.CGV {
+    line-height: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0;
+    padding: 0;
+    margin-top:10px;
+}
+
+.CGV a{
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: var(--PoliceTitle);
+}
+
+.social a{
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: var(--PoliceTitle);
+}
+
+
+.logofooter{
+    margin-top:10px;
+}
+
+div.social{
+    line-height: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: right;
+    margin:0;
+    padding: 0;
+    margin-top:10px;
+}
+
+.navbar-brand{
+    padding:0;
+    margin: 5px;
+    color:inherit;
+}
+
+.social a:hover{
+    color:black;
+}
+
+.CGV a:hover{
+    color:black;
+}
+
+
+/* ################################ */
+/* ############ END CV ############ */
+/* ################################ */
+
+
+.cv{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 500px 1fr;
+    grid-template-areas: "contact content"
+                         "annexe content";
+}
+
+.cv .content{
+    grid-area: content;
+    background-color: var(--backgroundColor_section);
+}
+
+.cv .contact{
+    grid-area: contact;
+    background-color: var(--backgroundColor_FH_clair_opaciter);
+}
+
+.cv .annexe{
+    background-color: var(--backgroundColor_FH_clair_opaciter);
+    grid-area: annexe;
+}
+
+*{
+    font-family: var(--PoliceText);
+}
+
+.cv h1, .cv h2, .cv h3{
+    font-family: var(--PoliceTitle);
+    text-transform:uppercase;
+}
+
+.cv q{
+    font-family: var(--PoliceQuote);
+}
+
+
+.cv h1, .cv h2{
+    text-align: center;
+    font-weight: bolder;
+}
+
+.cv h3{
+    color: var(--ColorTitle);
+}
+
+.cv a{
+    color: inherit;
+}
+
+.cv .contact img{
+    height: 300px;
+}
+
+
+
+@media only screen and (max-width: 993px){
+
+    .cv .contact h1{
+        position: absolute;
+        right: 10%;
+    }
+
+    .cv .contact img{
+        height: 200px;
+        object-fit: contain;
+    }
+
+    .cv .contact div{
+        flex-grow: 1;
+        flex-shrink: 1;
+        flex-basis: auto;
+    }
+
+    .cv{
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "contact"
+                             "content"
+                             "annexe";
+    }
+
+}
+
+
+
+@media only screen and (max-width: 577px){
+
+    .cv .contact div p{
+        font-size: small;
+   }
+
+   .cv .contact h1{
+        position: relative;
+    }   
+    .cv .contact img{
+        height: 120px;
+    }
+
+}
+
+/* ################################ */
+/* ############ END CV ############ */
+/* ################################ */
+
+
+
+/*RESPONSIVE*/
+
+@media screen and (max-width: 768px){
+    .navfooter{
+    text-align: center;
+    }
+
+    div.social{
+        text-align: center;
+        margin-top:20px;
+    }
+
+    .logofooter{
+        margin-top:0px;
+    }
+}

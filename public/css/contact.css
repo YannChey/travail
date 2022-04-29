@@ -1,0 +1,39 @@
+.contact_pagecenter {
+
+	
+	border: solid;
+	font-family: var(--PoliceText);
+	padding: 3%;
+background-color: var(--backgroundColor_section);
+color: var(--ColorTitle);
+}
+
+div.contact_pagecenter > h1 {
+
+	font-family: var(--PoliceTitle);
+	text-shadow: 1px 1px 15px white;
+}
+
+.contact_main {
+	padding-top: 10%;
+padding-bottom: 10%;
+
+}
+
+div.contact_pagecenter input {
+border: solid;
+border-width: 2px ;
+	background-color: #fff6d6;
+}
+
+div.contact_pagecenter textarea {
+border: solid;
+border-width: 2px ;
+	background-color: #fff6d6;
+}
+
+div.contact_pagecenter select {
+border: solid;
+border-width: 2px ;
+	background-color: #fff6d6;
+}

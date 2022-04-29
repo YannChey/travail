@@ -1,0 +1,238 @@
+@font-face{
+    font-family:tajawal;
+    src: url("../font/Tajawal/Tajawal-Regular.ttf") format("opentype");
+}
+
+@font-face{
+    font-family:Ubuntu;
+    src: url("../font/Ubuntu/Ubuntu-Regular.ttf") format("opentype");
+}
+
+@font-face{
+    font-family:Barlow;
+    src: url("../font/Barlow/Barlow-Medium.ttf") format("opentype");
+}
+
+:root{
+    --backgroundColor_FH: #898f86;
+    --backgroundColor_FH_clair: #97a585;
+    --ColorTitle: #666e5a;
+    --PoliceQuote: tajawal;
+    --PoliceText: Ubuntu;
+    --PoliceTitle: Barlow;
+    --backgroundColor_section: #d3c4b2c5;
+    --borderRadius_max: 0.5rem;
+    --borderRadius_min: 0.2rem;
+    --borderRadius_round:50%;
+}
+
+
+/*RESPONSIVE*/
+
+
+/* MAIN */
+
+/*.pageprincipale{
+    overflow-x:hidden;
+}*/
+
+.firstpart{
+    text-align: center;
+}
+
+.firstpart h1{
+    margin-top:10px;
+}
+
+.catalogue{
+    display:flex;
+    justify-content:center;
+    background-color: rgba(255, 255, 255, 0.336);
+    align-items: center;
+    padding-top: 10px;
+}
+
+.catalogue{
+    margin-bottom:50px;
+}
+
+.catalogue .img-fluid{
+    border-radius: 40%;
+}
+
+.article{
+    text-align: center;
+}
+
+.bartext h2{
+    text-align: left;
+    margin-bottom:10px;
+}
+
+.bartext h2:after{
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    margin-right: -100%;
+    margin-bottom: 7px;
+    margin-left: 7px;
+    border-bottom: 3px solid #000000;
+}
+
+.avis{
+    display: flex;
+    padding-top:20px;
+    margin-bottom:50px;
+}
+
+.avis .img-fluid{
+    border-radius: 0%;
+}
+
+
+h2, h1{
+    font-family: var(--PoliceTitle);
+}
+
+.textpresentation{
+    margin-bottom:50px;
+}
+
+.textpresentation p, .article p{
+    font-family: var(--PoliceText);
+    font-weight: bold;
+}
+
+.textpresentation, .avis{
+    background-color: rgba(255, 255, 255, 0.336);
+}
+
+.article p{
+    font-family: var(--PoliceText);
+}
+
+@media all and (min-width: 992px) {
+	.navbar .nav-item .dropdown-menu{ display: none; }
+	.navbar .nav-item:hover .nav-link{   }
+	.navbar .nav-item:hover .dropdown-menu{ display: block; }
+	.navbar .nav-item .dropdown-menu{ margin-top:0px; }
+}	
+
+
+@media screen and (max-width: 768px){
+    .navfooter{
+    text-align: center;
+    }
+
+    div.social{
+        text-align: center;
+        margin-top:20px;
+    }
+
+    .logofooter{
+        margin-top:0px;
+    }
+
+    .catalogue, .avis{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+
+
+/*NAVBAR
+
+
+header{
+    position: sticky;
+    top:0;
+}
+
+.navbar{
+    background: linear-gradient(to left, #eee, #97a585 50%, #eee 125%, #333 50%);
+}
+
+.caddie, .logo{
+    max-height:40px;
+}
+
+.navbar-nav{
+    padding-left:50px;
+}
+
+.navbar-light .navbar-nav .nav-link{
+    color:white;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: var(--PoliceTitle);
+}
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color:green;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+
+
+/*FOOTER
+
+footer{
+    background: linear-gradient(to left, #eee, #97a585 50%, #eee 125%, #333 50%);
+}
+
+.logofooter{
+    text-align: center;
+}
+
+.lbmfooter{
+    height:90px;
+}
+
+div.CGV {
+    line-height: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin:0;
+    padding: 0;
+    margin-top:10px;
+}
+
+.CGV a{
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: var(--PoliceTitle);
+}
+
+.social a{
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: var(--PoliceTitle);
+}
+
+
+.logofooter{
+    margin-top:10px;
+}
+
+div.social{
+    line-height: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    text-align: right;
+    margin:0;
+    padding: 0;
+    margin-top:10px;
+}
+
+.navbar-brand{
+    padding:0;
+    margin: 5px;
+    color:inherit;
+}*/
