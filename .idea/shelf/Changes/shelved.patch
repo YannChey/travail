@@ -1,0 +1,11 @@
+Index: item.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/item.php b/item.php
+new file mode 100644
+--- /dev/null	(date 1651234520615)
++++ b/item.php	(date 1651234520615)
+@@ -0,0 +1,1 @@
++<?php
