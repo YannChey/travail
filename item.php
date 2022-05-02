@@ -1,7 +1,6 @@
 
 <?php
 include 'header.php';
-
 $Nomobjet = "claquette";
 echo $Nomobjet;
 echo "<br>";
